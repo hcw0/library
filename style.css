@@ -1,5 +1,5 @@
 * {
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     box-sizing: border-box;
 }
 
@@ -7,14 +7,60 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .body-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     height: 90vh;
 }
 
 .header > h1 {
     font-size: 4.5rem;
+}
+
+.adding-section {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.input-container > label {
+    font-weight: 500;
+}
+
+.adding-section-container {
+    display: flex;
+}
+
+.adding-section-container .status-input {
+    align-items: center;
+}
+
+#status {
+    transform: scale(1.5);
+}
+
+.button {
+    font-weight: 500;
+    padding: .3rem 1.6rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: .9rem;
 }
