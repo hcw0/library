@@ -1,5 +1,5 @@
 * {
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     box-sizing: border-box;
 }
 
@@ -45,12 +45,14 @@ button, input[type="submit"], input[type="reset"] {
     font-weight: 600;
 }
 
-.adding-section-container {
+.adding-section-form {
     display: flex;
 }
 
-.adding-section-container .status-input {
+.status-input {
     align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 #status {
@@ -63,6 +65,10 @@ button, input[type="submit"], input[type="reset"] {
     border-radius: 8px;
     border: 1px solid black;
     font-size: .9rem;
+}
+
+.addBookButton {
+    background-color: greenyellow;
 }
 
 .books-display {
@@ -99,13 +105,15 @@ button, input[type="submit"], input[type="reset"] {
     flex-direction: row;
 }
 
-.book-information {
-    width: 20%;
-}
-
-.delete-button-container {
+.book-information, .delete-button-container {
     width: 20%;
     display: flex;
     justify-items: center;
     align-items: center;
+}
+
+.remove-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: red;
 }

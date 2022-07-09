@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <title>Library</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="body-container">
@@ -16,7 +17,7 @@
                 <h1>LIBRARY</h1>
             </div>
             <div class="adding-section">
-                <form action="" class="adding-section-container">
+                <form action="" method="post" class="adding-section-form">
                     <div class="title-input input-container">
                         <label for="title">Title</label>
                         <input type="text" id="title" name="title">    
@@ -27,13 +28,13 @@
                     </div>
                     <div class="pages-input input-container">
                         <label for="pages">Pages</label>
-                        <input type="number" id="pages" name="pages">    
+                        <input type="number" id="pages" name="pages">
                     </div>
                     <div class="status-input input-container">
                         <label for="status">Read</label>
-                        <input type="checkbox" id="status" name="status">    
+                        <input type="checkbox" id="status" name="status">
                     </div>
-                    <button type="submit" class="button">Add</button>
+                    <button type="button" class="button addBookButton">Add</button>
                 </form>
             </div>
             <div class="books-display">
@@ -56,18 +57,20 @@
 
                 <div class="book-container">
                     <div class="book-title book-information">
-                        <p></p>
+                        <p>Harry Potter and the Sorcerer's Stone</p>
                     </div>
                     <div class="book-author book-information">
-                        <p></p>
+                        <p>J. K. Rowling</p>
                     </div>
                     <div class="book-pages book-information">
-                        <p></p>
+                        <p>309</p>
                     </div>
                     <div class="book-status book-information">
-                        <p></p>
+                        <p>Read</p>
                     </div>
-                    <div class="delete-button-container"></div>
+                    <div class="book-information remove-button-container">
+                        <button class="button remove-button">Remove</button>
+                    </div>
                 </div>
             </div>
         </div>
